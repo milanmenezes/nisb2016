@@ -4,20 +4,20 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>NIE IEEE Student Branch</title>
-  {% load staticfiles %}
-  <link rel="shortcut icon" href={% static "resized_logo3.png" %} />
+
+  <link rel="shortcut icon" href="../static/resized_logo3.png" />
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  {% load staticfiles %}
-  <link href= {% static "css/materialize.css" %} type="text/css" rel="stylesheet" media="screen,projection"/>
-  {% load staticfiles %}
-  <link href={% static "css/style.css" %} type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link href= "../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  {% load staticfiles %}
-  <script src={% static "js/materialize.js" %}></script>
-  {% load staticfiles %}
-  <script src={% static "js/init.js" %}></script>
+
+  <script src="../static/js/materialize.js"></script>
+
+  <script src="../static/js/init.js" ></script>
  <!--To be added to a script file-->
   <script>
 	$(document).ready(function(){
@@ -72,38 +72,38 @@
 
 <!--dropdown content for navigation bars-->
   <ul id="nisbAG" class="dropdown-content">
-	<li><a href="/wie">WIE</a></li>
-	<li><a href="/cs">Computer Society</a></li>
-	<li><a href="/fg">Focus Groups</a></li>
+	<li><a href="wie.html">WIE</a></li>
+	<li><a href="cs.html">Computer Society</a></li>
+	<li><a href="fg.html">Focus Groups</a></li>
   </ul>
 
 
   <!--for small screens (mobile)-->
   <ul id="nisbAG_mobile" class="dropdown-content">
-        <li><a href="/wie">WIE</a></li>
-        <li><a href="/cs">Computer Society</a></li>
-        <li><a href="/fg">Focus Groups</a></li>
+        <li><a href="wie.html">WIE</a></li>
+        <li><a href="cs.html">Computer Society</a></li>
+        <li><a href="fg.html">Focus Groups</a></li>
   </ul>
 
 
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-  {% load staticfiles %}
-	    <a id="logo-container" href="/" class="brand-logo"><img class="hide-on-med-and-down" src={% static "resized_logo2.png" %}></a>
-  {% load staticfiles %}
-	    <a id="logo-container" href="/" class="brand-logo"><img class="hide-on-large-only" src={% static "resized_logo3.png" %}></a>
+
+	    <a id="logo-container" href="/" class="brand-logo"><img class="hide-on-med-and-down" src="../static/resized_logo2.png"></a>
+
+	    <a id="logo-container" href="/" class="brand-logo"><img class="hide-on-large-only" src="../static/resized_logo3.png"></a>
       <ul class="right hide-on-med-and-down">
         <li class="active"><a href="/">Home</a></li>
-	<li><a href="/events">Events</a></li>
+	<li><a href="events.html">Events</a></li>
 	<li><a class="dropdown-button" href="#" data-activates="nisbAG">Affinity Groups</a></li>
-	<li><a href="/about">About</a></li>
+	<li><a href="about.html">About</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="/events">Events</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
         <li><a class="dropdown-button" href="#" data-activates="nisbAG_mobile">Affinity Groups</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -128,8 +128,8 @@
 
       </div>
     </div>
-  {% load staticfiles %}
-	    <div class="parallax"><img class="responsive" src={% static "background1.jpg" %} alt="NISB Award"></div>
+
+	    <div class="parallax"><img class="responsive" src="../static/background1.jpg" alt="NISB Award"></div>
   </div>
 
 
@@ -241,7 +241,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="/static/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="../static/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
 </div>

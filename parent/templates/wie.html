@@ -4,17 +4,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>NIE IEEE Student Branch</title>
-  <link rel="shortcut icon" href="/static/resized_logo3.png" />
+  <link rel="shortcut icon" href="../static/resized_logo3.png" />
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  {% load staticfiles %}
-  <link href= {% static "css/materialize.css" %} type="text/css" rel="stylesheet" media="screen,projection"/>
-  {% load staticfiles %}
-  <link href={% static "css/style.css" %} type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <link href=  "../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <link href= "../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="/static/js/materialize.js"></script>
-  <script src="/static/js/init.js"></script>
+  <script src="../static/js/materialize.js"></script>
+  <script src="../static/js/init.js"></script>
  <!--To be added to a script file-->
   <script>
 	$(document).ready(function(){
@@ -27,7 +27,7 @@
 	$('.modal-trigger').leanModal();
 	$('.slider').slider();
 	});
-	
+
   </script>
   <style>
 	 .slider .slides {
@@ -65,36 +65,36 @@
 
 <!--dropdown content for navigation bars-->
   <ul id="nisbAG" class="dropdown-content">
-	<li><a href="/wie">WIE</a></li>
-	<li><a href="/cs">Computer Society</a></li>
-	<li><a href="/fg">Focus Groups</a></li>
+	<li><a href="wie.html">WIE</a></li>
+	<li><a href="cs.html">Computer Society</a></li>
+	<li><a href="fg.html">Focus Groups</a></li>
   </ul>
 
 
   <!--for small screens (mobile)-->
   <ul id="nisbAG_mobile" class="dropdown-content">
-        <li><a href="/wie">WIE</a></li>
-        <li><a href="/cs">Computer Society</a></li>
-        <li><a href="/fg">Focus Groups</a></li>
+        <li><a href="wie.html">WIE</a></li>
+        <li><a href="cs.html">Computer Society</a></li>
+        <li><a href="fg.html">Focus Groups</a></li>
   </ul>
 
 
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-	    <a id="logo-container" href="/" class="brand-logo"><img class="hide-on-med-and-down" src="/static/resized_logo2.png"></a>
-	    <a id="logo-container" href="/" class="brand-logo"><img class="hide-on-large-only" src="/static/resized_logo3.png"></a>
+	    <a id="logo-container" href="/" class="brand-logo"><img class="hide-on-med-and-down" src="../static/resized_logo2.png"></a>
+	    <a id="logo-container" href="/" class="brand-logo"><img class="hide-on-large-only" src="../static/resized_logo3.png"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="/">Home</a></li>
-	<li><a href="/events">Events</a></li>
+        <li><a href="index.html">Home</a></li>
+	<li><a href="events.html">Events</a></li>
 	<li class="active"><a class="dropdown-button" href="#" data-activates="nisbAG">Affinity Groups</a></li>
-	<li><a href="/about">About</a></li>
+	<li><a href="about.html">About</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/events">Events</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
         <li class="active"><a class="dropdown-button" href="#" data-activates="nisbAG_mobile">Affinity Groups</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -116,7 +116,7 @@
 
       </div>
     </div>
-	    <div class="parallax"><img class="responsive" src="/static/background1.jpg" alt="NISB Award"></div>
+	    <div class="parallax"><img class="responsive" src="../static/background1.jpg" alt="NISB Award"></div>
   </div>
 
  <div class="container">
@@ -126,9 +126,9 @@
 			 <ul class="collapsible">
 				 <li>
 				 <div class="collapsible-header">IEEE Women In Engineering</div>
-				 <div class="collapsible-body"><blockquote>IEEE Women in Engineering (WIE) is one of the largest international professional organization dedicated to promoting women engineers and scientists and inspiring girls around the world to follow their academic interests to a career in engineering.<br>	
+				 <div class="collapsible-body"><blockquote>IEEE Women in Engineering (WIE) is one of the largest international professional organization dedicated to promoting women engineers and scientists and inspiring girls around the world to follow their academic interests to a career in engineering.<br>
 				 <a href="http://wie.ieee.org/about/" target="_blank">More info<i class="material-icons">open_in_new</i></a>
-					</blockquote>	 
+					</blockquote>
 				</div>
 				 </li>
 				 <li>
@@ -140,7 +140,7 @@
 				 <div class="collapsible-header">FAQs</div>
 				 <div class="collapsible-body">
 				 	<ul class="collapsible">
-						
+
 					 <li>
 					 <div class="collapsible-header">Is WIE only for women?</div>
 					 <div class="collapsible-body">No. Men are welcomed and encouraged to join WIE.</div>
@@ -178,7 +178,7 @@
           <div id="current" class="col s12">
 
             <p class="light">
-	    
+
 	    {% if todayEvents %}
 	    <table class="highlight responsive-table z-depth-5">
 		<thead>
@@ -206,11 +206,11 @@
 		</tbody>
 
 	    </table>
-	
+
 	    {% else %}
 			No event today! Swipe to see upcoming events
 	{% endif %}
-	    
+
 	    </p>
           </div>
 
@@ -253,14 +253,14 @@
 	{% else %}
 		No upcoming event in recent future!
 	{% endif %}
-    
-	
+
+
 	    </p>
     </div>
 
         <div id="past" class="col s12">
             <p class="light">
-	    
+
 	    {% if pastEvents %}
 	    <table class="highlight responsive-table">
 		<thead>
@@ -280,7 +280,7 @@
 					 <a class="waves-effect waves-light btn modal-trigger" href={{infoDiv}}>Details</a>
 					{% endwith %}
 
-					</td>	
+					</td>
 					<td>  <a class="waves-effect waves-light btn" href={{ happening.fbLink }}>Give Us A Feedback</a></td>
 				</tr>
 			{% endfor %}
